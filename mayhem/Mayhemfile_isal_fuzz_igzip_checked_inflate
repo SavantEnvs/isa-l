@@ -1,0 +1,9 @@
+project: savantenvs/isa-l
+target: isal_fuzz_igzip_checked_inflate
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/isal_fuzz_igzip_checked_inflate/testsuite
+cmds:
+  - cmd: /mayhem/isal_fuzz_igzip_checked_inflate
+    libfuzzer: true
+    timeout: 5

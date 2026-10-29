@@ -1,0 +1,9 @@
+project: savantenvs/isa-l
+target: isal_fuzz_crc
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/isal_fuzz_crc/testsuite
+cmds:
+  - cmd: /mayhem/isal_fuzz_crc
+    libfuzzer: true
+    timeout: 5

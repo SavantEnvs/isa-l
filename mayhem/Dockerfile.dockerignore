@@ -1,0 +1,4 @@
+# Keep the full repo (incl. .git) in the build context; drop only editor/OS cruft.
+.DS_Store
+*.swp
+*~
